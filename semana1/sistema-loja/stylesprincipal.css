@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    background-color: grey;
+}
+h1{
+    text-align: center;
+    background-color: blue;
+}
+.chamada{
+    background-color: rgb(0, 153, 255);
+    text-align: center;
+}
+.painel{
+ display: flex;
+ flex-wrap: wrap;
+justify-content: space-around;
+background-color:rgb(0, 217, 255);
+padding-bottom: 70vh;
+
+}
+.menu{
+    background-color: gray;
+}
+.redes{
+    text-align: center;
+    background-color: gray;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: gray;
+}
+.facebook{
+    width: 5vw;
+}
+.twitter{
+    width: 5vw;
+}
+.instagram{
+    width: 5vw;
+}
