@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="stylessecundarias.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,41 +9,50 @@
 </head>
 <body>
     <div>
-        <p>animais.sa</p>
-    </div>
+        <h2>Animais.sa</h2>
+   </div>
     
-    <div>
-        <a href="index.html">Página Inicial</a>
+    <div class="painel">
+        <div>
+         <a href="index.html">Página Inicial</a>
+        </div>
+        <div>
         <a href="ctrl-estoque.html">Controle de Estoque</a>
+        </div> 
+        <div>
         <a href="add-produto.html">Adicionar Produto</a>
-        <a href="funcionarios.html">Funcionários</a>
+     </div> 
+     <div>
+         <a href="funcionarios.html">Funcionários</a>
+     </div>
+     </div>
     </div>
 
     
-    <h2>Adicionar Produto</h2>
-    <form action="">
+    <h3>Adicionar Produto</h3>
+    <form action="#">
         <div>
             <label for="link-foto">Link para foto: </label>
-            <input type="url" id="link-foto" name="link-foto">
+            <input placeholder="Coloque a ulr da foto" type="url" id="link-foto" name="link-foto">
         </div>
         
         <div>
             <label for="descricao">Descrição do produto: </label>
-            <input type="text" id="description" name="descrição">
+            <input placeholder="Coloque o nome do produto" type="text" id="description" name="descrição">
         </div>
         
         <div>
             <label for="preco">Preço (em R$): </label>
-            <input type="number" id="price" name="preço">
+            <input placeholder="Coloque o valor do produto" type="number" id="price" name="preço">
         </div>
         
         <div>
             <label for="quantidade">Quantidade disponível: </label>
-            <input type="number" id="quantity" name="quantidade">
+            <input placeholder="Coloque a ser adicionada" type="number" id="quantity" name="quantidade">
         </div>
 
         <div class="form-add">
-            <button type="button">Adicionar</button>
+            <button class="botao" type="button">Adicionar</button>
         </div>
 
     </form>
