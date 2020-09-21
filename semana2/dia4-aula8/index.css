@@ -7,7 +7,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 h2 {
@@ -106,6 +105,7 @@ table {
     width: 60%;
     text-align: center;
     font-family: 'roboto';
+    margin-left: 10vw;
 }
 
 td button {
@@ -132,7 +132,7 @@ td button {
     border-radius: 5px;
     font-size: 10px;
     color: black;
-    font-family: 'roboto';
+    font-family: 'roboto';  
     
 }
 button:hover{
@@ -156,3 +156,4 @@ input{
     border-right: white;
     border-width: 3px;
 }
+
