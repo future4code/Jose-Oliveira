@@ -59,6 +59,7 @@ div img {
 
 .icone {
     height: 15px;
+    background-color: white;
 }
 
 
@@ -113,6 +114,7 @@ td button {
     color: black;
 }
 
+
 .container-do-search {
     margin-top: 20px;
     height: 100px;
@@ -128,9 +130,14 @@ td button {
     font-size: 10px;
     color: black;
 }
-
+button:hover{
+    background-color: #635a3d
+}
 #back-button:hover {
     background-color: #635a3d
+}
+#back-button:active{
+    color: white;
 }
 .chamada{
     margin-top: 100px;
