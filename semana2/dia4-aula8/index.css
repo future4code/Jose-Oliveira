@@ -54,7 +54,7 @@ div img {
     height: 500px;
     text-align: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
 }
 
 .icone {
@@ -129,4 +129,7 @@ td button {
 
 #back-button:hover {
     background-color: #635a3d
+}
+.chamada{
+    margin-top: 150px;
 }
