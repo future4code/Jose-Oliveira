@@ -1,0 +1,128 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    height: 100vh; 
+
+}
+.div1{
+        display: grid;
+        background-color: blue;
+        align-items: center;
+        justify-content: center;
+        border: solid black 1px;
+        margin: 1vh;
+        width: 30vw;
+        height: 15vh;
+    
+}
+.div2{
+    display: grid;
+    background-color: yellow;
+    align-items: center;
+    justify-content: center;
+    border: solid black 1px;
+    margin: 1vh;
+    width: 30vw;
+    height: 15vh;
+
+}
+.div3{
+    display: grid;
+    background-color: green;
+    align-items: center;
+    justify-content: center;
+    border: solid black 1px;
+    margin: 1vh;
+    width: 30vw;
+    height: 15vh;
+}
+.div4{
+    display: grid;
+    background-color: blue;
+    align-items: center;
+    justify-content: center;
+    border: solid black 1px;
+    margin: 1vh;
+    width: 30vw;
+    height: 15vh;
+}
+.div5{
+    display: grid;
+    background-color: yellow;
+    align-items: center;
+    justify-content: center;
+    border: solid black 1px;
+    margin: 1vh;
+       width: 30vw;
+       height: 15vh;
+}
+.div6{
+    display: grid;
+    background-color: green;
+    align-items: center;
+    justify-content: center;
+    border: solid black 1px;
+    margin: 1vh;
+    width: 30vw;
+    height: 15vh;
+}
+.div7{
+    display: grid;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: solid black 1px;
+    margin: 1vh;
+    height: 25vw;
+    grid-row-end: auto;
+    grid-row-start: auto / 3;
+    grid-column-start: auto;
+    grid-column-end: auto;
+
+
+}
+.div8{
+    display: grid;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: solid black 1px;
+    margin: 1vh;  
+    height: 25vw;
+
+}
+
+.div9{
+    display: grid;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border: solid black 1px;
+    margin: 1vh;
+    width: 30vw;
+    height: 15vh;
+    grid-column: 1; 
+}
+.div10{
+    display: grid;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border: solid black 1px;
+    margin: 1vh;
+    width: 30vw;
+    height: 15vh;
+}
+.div11{
+    display: grid;
+    background-color:white;
+    align-items: center;
+    justify-content: center;
+    border: solid black 1px;
+    margin: 1vh;
+    width: 30vw;
+    height: 15vh;
+}
