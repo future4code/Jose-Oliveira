@@ -63,3 +63,26 @@ function trigonometria(a,b,c){
         console.log("isosceles")
     }
 }
+
+//QUestão 5 - logica de programação
+
+function divisibilidade(a,b){
+    let maior = 0
+    let menor = 0
+    if(a>b){
+        maior = a
+        menor = b
+    }else {
+    maior = b
+    menor = a 
+  
+}
+console.log("O maior numero é:",maior)
+console.log(menor,"não é divisivel por",maior)
+if(maior%menor ===0){
+    console.log(maior,"é divisivel por", menor)
+}else{
+    console.log(maior,"não é divisivel por", menor)
+}
+console.log("A diferença entre ele é:",maior-menor)
+}
