@@ -50,3 +50,16 @@ while(i <= quantidadeDeNumerosPares) {
   i++
 }
 */
+
+//Questão 4 - logica de programação
+
+function trigonometria(a,b,c){
+    
+    if((a===b)&&(a===c)){
+        console.log("equilatero")
+    }else if((a!=b)&&(a!=c)&&(b!=c)){
+        console.log("escaleno")
+    }else{
+        console.log("isosceles")
+    }
+}
