@@ -147,11 +147,25 @@ array é uma variavel com varias variaveis dentro e objetos são variaveis com v
      }
  }
 
+ /*questão 3 - Objetos
  const filmeFavorito = {
-     Titulo: 'O mascara',
-     Ano: 1994,
-     Diretor:  'Chuck Russell',
-     Atores: 'Jim Carrey, Cameron Diaz, Richard Jeni e Peter Greene'
- }
- console.log("Venha assistir ao filme",filmeFavorito.Titulo,"de",filmeFavorito.Ano,"dirigido por",filmeFavorito.Diretor,
- "e estrelado por",filmeFavorito.Atores)
+    Titulo: 'O mascara',
+    Ano: 1994,
+    Diretor:  'Chuck Russell',
+    Atores: 'Jim Carrey, Cameron Diaz, Richard Jeni e Peter Greene'
+}
+console.log("Venha assistir ao filme",filmeFavorito.Titulo,"de",filmeFavorito.Ano,"dirigido por",filmeFavorito.Diretor,
+"e estrelado por",filmeFavorito.Atores)
+*/
+
+//questão 4 - Objetos
+const pessoaQualquer = [{
+    Nome: 'Rafael',
+    idade: 27,
+    email: 'aceitaesseid@Hotmail.com',
+    endereço: 'Rua dos bobos numero 0'
+}]
+
+const anonimizarPessoa = pessoaQualquer.map((anonimo) => {
+    anonimo.Nome = "Anonimo"
+})
