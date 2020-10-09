@@ -130,3 +130,8 @@ let helloF4 = function(){
 }
 const chamada = helloF4()
 */
+
+/*Questão 1 - Objetos
+array é uma variavel com varias variaveis dentro e objetos são variaveis com varios tipos de informações diferentes
+ sobre uma unica coisa
+ */
