@@ -9,3 +9,9 @@ as constantes novoMontante e segundoMontante irão chamar a função investe Din
 ações, 150 e tesouro Direto, 200 respectivamente as funções em seguida irão verificar o tipo do investimento
 e multiplicar o valor pela correspondente constante e em seguida ira imprimir os resultados
 */
+
+/*questão 3 - interpretação
+A ira verificar se os numeros do primeiro array são pares ou não, e colocara os numeros pares em um array e 
+os impares em outro, em seguida ira imprimir a quantidade de numero no array original, no array par e no array impar
+respectivament
+*/
