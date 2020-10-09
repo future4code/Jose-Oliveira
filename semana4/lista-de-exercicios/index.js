@@ -87,7 +87,7 @@ if(maior%menor ===0){
 console.log("A diferença entre ele é:",maior-menor)
 }
 
-//questão 1 funções
+/*questão 1 funções
 function MaiorMenor(array){
 let maior = -Infinity
 let imaior = 0
@@ -121,3 +121,12 @@ console.log("O segundo maior é:",maior)
 }
 
 MaiorMenor([2,3,46,7,8,222,11,3])
+*/
+
+/*Questão 2 - funções
+let helloF4 = function(){
+    return window.alert("Hello Future4")
+
+}
+const chamada = helloF4()
+*/
