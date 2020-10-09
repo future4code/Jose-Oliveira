@@ -20,8 +20,10 @@ O codigo irá ler todos os numeros do array numeros e fara com que a constante n
 constante numero2 seja igual ao maior numero e em seguida ira imprimir ambos os numeros
 */
 
-//questão 1 - Logica de programação
-
+/*questão 1 - Logica de programação
+Para percorrer os itens de um array você pode usar o for(let i=0;i<array.length;i++), o for(let i of array) ou o array.foreach
+*/
+//exemplo
 let arrayex = [1,2,3,4,5]
 
 function logicaDeProgramacao(array){
@@ -29,3 +31,11 @@ for(let i=0;i<array.length;i++){
     console.log(arrayex[i])
 }
 }
+
+/*Questão 2 - logica de programação
+a - false
+b - true
+c - true
+d - true
+e - true
+*/
