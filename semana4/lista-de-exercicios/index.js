@@ -86,3 +86,38 @@ if(maior%menor ===0){
 }
 console.log("A diferença entre ele é:",maior-menor)
 }
+
+//questão 1 funções
+function MaiorMenor(array){
+let maior = -Infinity
+let imaior = 0
+let menor = Infinity  
+let imenor = 0
+for(let i=0;i<array.length;i++){
+    if(array[i]>maior){
+        maior = array[i]
+        imaior = i
+    }
+    if(array[i]<menor){
+        menor = array[i]
+        imenor = i
+    }
+}
+array.splice(imaior,1)
+array.splice(imenor,1)
+console.log(array)
+maior = -Infinity
+menor = Infinity
+for(let b=0;b<array.length;b++){
+    if(array[b]>maior){
+        maior = array[b]
+    }
+    if(array[b]<menor){
+        menor = array[b]
+    }
+}
+console.log("O segundo menor é:",menor)
+console.log("O segundo maior é:",maior)    
+}
+
+MaiorMenor([2,3,46,7,8,222,11,3])
