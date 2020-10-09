@@ -135,3 +135,23 @@ const chamada = helloF4()
 array é uma variavel com varias variaveis dentro e objetos são variaveis com varios tipos de informações diferentes
  sobre uma unica coisa
  */
+
+ //QUestão 2 - Objetos
+ let retangulo
+ function criaretangulo(a,b){
+     return retangulo = {
+         altura: a,
+         largura: b,
+         perimetro: 2*(a+b),
+         area: a*b,
+     }
+ }
+
+ const filmeFavorito = {
+     Titulo: 'O mascara',
+     Ano: 1994,
+     Diretor:  'Chuck Russell',
+     Atores: 'Jim Carrey, Cameron Diaz, Richard Jeni e Peter Greene'
+ }
+ console.log("Venha assistir ao filme",filmeFavorito.Titulo,"de",filmeFavorito.Ano,"dirigido por",filmeFavorito.Diretor,
+ "e estrelado por",filmeFavorito.Atores)
