@@ -39,3 +39,14 @@ c - true
 d - true
 e - true
 */
+
+/*Questão 3 - logica de programação
+O codigo não funciona pois faltava adicionar o i++ o que fazia com que caisse em um loop infinito
+segue correção
+const quantidadeDeNumerosPares
+let i = 0
+while(i <= quantidadeDeNumerosPares) {
+  console.log(i*2)
+  i++
+}
+*/
