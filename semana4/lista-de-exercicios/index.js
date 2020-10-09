@@ -169,3 +169,25 @@ const pessoaQualquer = [{
 const anonimizarPessoa = pessoaQualquer.map((anonimo) => {
     anonimo.Nome = "Anonimo"
 })
+
+//Questão 1 - funções de array
+const criancasEAdultos = [
+	{ nome: "Pedro", idade: 20 },
+	{ nome: "João", idade: 10 },
+	{ nome: "Paula", idade: 12 },
+	{ nome: "Artur", idade: 89 } 
+]
+//a
+const adultos = criancasEAdultos.filter((adultos)=>{
+    if(adultos.idade>=20){
+    return true
+    }else return false    
+}
+)
+//b
+const criancas = criancasEAdultos.filter((criancas)=>{
+    if(criancas.idade<20){
+    return true
+    }else return false    
+}
+)
