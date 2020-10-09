@@ -15,3 +15,6 @@ A ira verificar se os numeros do primeiro array são pares ou não, e colocara o
 os impares em outro, em seguida ira imprimir a quantidade de numero no array original, no array par e no array impar
 respectivament
 */
+/*questão 4 - interpretação
+O codigo irá ler todos os numeros do array numeros e fara com que a constante numero1 seja igual ao menor numero e a
+constante numero2 seja igual ao maior numero e em seguida ira imprimir ambos os numeros
