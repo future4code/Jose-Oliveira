@@ -1,7 +1,13 @@
 import React from "react";
 import "./App.css";
 import axios from "axios";
+import styled from "styled-components";
 
+
+const BotaoDeletar= styled.span`
+color:red;
+cursor:pointer;
+`
 
 class App extends React.Component {
  
@@ -11,6 +17,9 @@ class App extends React.Component {
     name:"",
     email:""
  }
+
+
+ 
  componentDidMount = () =>{
   this.criaListaUsuarios()
 }
@@ -74,9 +83,23 @@ criarUsuario = ()=>{
     })
  }
 
+ deletarUsuario = (userId) =>{
+axios.delete(`https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users/${userId}`,{
+  headers: {
+    Authorization: "Rafael-Oliveira-Dumont"
+  }}).then((response) =>{
+    window.alert("usuario deletado")
+    this.criaListaUsuarios()
+  }
+  ).catch((error) =>{
+  console.log(error.message)})
+}
+ 
   render() {
+
+
     const listaRenderizada = this.state.usuarios.map((usuario) =>{
-    return<p key={usuario.id}>{usuario.name}</p>
+    return<p key={usuario.id}>{usuario.name} <BotaoDeletar  onClick={() => this.deletarUsuario(usuario.id)}>X</BotaoDeletar></p>
     })
 
    if(this.state.pagina){
@@ -103,7 +126,7 @@ criarUsuario = ()=>{
       return (
         <div>
         <button onClick={this.voltarpagina}>ir para lista de usuarios</button>
-        {listaRenderizada}
+        {listaRenderizada} 
         </div>
       )
     }
