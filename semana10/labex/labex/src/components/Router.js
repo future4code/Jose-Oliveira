@@ -6,6 +6,7 @@ import Aplication from "./ApplicationFormPage"
 import CreateTrip from "./CreateTripPage"
 import TripList from "./ListTripsPage"
 import TripDetails from "./TripDetailsPage"
+import Areaadm from "./Areaadm"
 
 function Router(){
 return(
@@ -28,6 +29,9 @@ return(
     </Route>
     <Route exact path="/tripdetails">
         <TripDetails/>
+    </Route>
+    <Route exact path="/areaadm">
+           <Areaadm/>
     </Route>
 </Switch>
 </BrowserRouter>
