@@ -77,11 +77,10 @@ function Login() {
 
   return (
   <Pagina>
-     <ButtonCreateTrip onClick={toCreateTrip}>CreateTrip</ButtonCreateTrip>
      <Label>email:</Label>
-     <Input onChange={handleEmail} value={email}></Input>
+     <Input type={"email"} required onChange={handleEmail} value={email}></Input>
      <Label>senha:</Label>
-     <Input onChange={handleSenha} value={senha}></Input>
+     <Input type={"password"} required onChange={handleSenha} value={senha}></Input>
      <ButtonLogin onClick={login}>login</ButtonLogin>
   </Pagina>
   )

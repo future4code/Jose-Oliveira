@@ -64,13 +64,17 @@ const handleDuration = (event) =>{
        planet: planet,
        date: date,
        description: description,
-       durationInDays: duration
+       durationInDays: Number(duration)
    }
    console.log(body)
       axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labeX/Rafael-Oliveira-Dummont/trips",body,{
         headers: {
-        Authorization:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IkRyQkszTFZxYm05NERFZThPWmpiIiwiZW1haWwiOiJyYWZhZWxsbG1vbGl2ZWlyYUBnbWFpbC5jb20iLCJpYXQiOjE2MDU3MTk3ODd9.wbpVAM6Kj-_TqK4nn3aMxmxs5DeAxXmQfawYWByXE6I"
-      }})
+        auth: localStorage.getItem("token")
+      }}).then(response =>{
+        console.log(response)
+      }).catch(error =>{
+        console.log(error)
+      })
      
  }
 
@@ -81,15 +85,15 @@ const handleDuration = (event) =>{
   <Pagina>
     <H1>Dados da nova viagem</H1>
     <Label>Nome</Label>
-     <Input onChange={handleName} value={name}></Input>
+     <Input type={"text"} onChange={handleName} value={name}></Input>
      <Label>Planeta</Label>
-     <Input onChange={handlePlanet} value={planet}></Input>
+     <Input type={"text"} onChange={handlePlanet} value={planet}></Input>
      <Label>Data</Label>
-     <Input onChange={handleDate} value={date}></Input>
+     <Input type={"date"} onChange={handleDate} value={date}></Input>
      <Label>Descrição</Label>
-     <Input onChange={handleDescription} value={description}></Input>
+     <Input type={"text"} onChange={handleDescription} value={description}></Input>
      <Label>Duração</Label>
-     <Input onChange={handleDuration} value={duration}></Input>
+     <Input type={"number"} onChange={handleDuration} value={duration}></Input>
      <Button onClick={criarViagem}>Criar viagem</Button>
   </Pagina>
   )
