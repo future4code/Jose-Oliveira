@@ -74,10 +74,8 @@ const handleDuration = (event) =>{
         console.log(response)
       }).catch(error =>{
         console.log(error)
-      })
-     
+      })  
  }
-
 
   const history = useHistory
 
