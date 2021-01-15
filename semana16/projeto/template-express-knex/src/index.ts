@@ -3,7 +3,7 @@ import knex from "knex";
 import cors from "cors";
 import dotenv from "dotenv";
 import { AddressInfo } from "net";
-import { stringify } from "querystring";
+import dayjs from 'dayjs'
 
 dotenv.config();
 
@@ -25,6 +25,7 @@ app.use(cors())
 app.put("/user",addUser)
 app.get("/user/:id",findUser)
 app.post("/user/edit/:id",editUser)
+app.put("/task",addTask)
 
 async function addUser(req:Request, res:Response):Promise<void>{
    try {
@@ -71,6 +72,27 @@ async function addUser(req:Request, res:Response):Promise<void>{
     where id = "${req.params.id}"
      `)
      res.status(200).send("usuario alterado com sucesso")
+
+   } catch (error) {
+     res.status(400).send(error.message)
+   }
+ }
+
+ async function addTask(req:Request, res:Response):Promise<void>{
+   try {
+      if(!req.body.title){throw new Error("Favor indicar o novo nome")}
+      if(!req.body.description){throw new Error("Favor descrever a tarefa")}
+      if(!req.body.limitDate){throw new Error("Favor indicar data limite")}
+      if(!req.body.creatorUserId){throw new Error("Favor indicar o id do usuario")}               
+      await connection.raw(`
+      insert into to_do_list values(
+         "${Date.now()}",
+         "${req.body.title}",
+         "${req.body.description}",
+         "${dayjs(req.body.limitDate,`DD/MM/YYYY`).format(`YYYY/DD/MM`)}",
+         "${req.body.creatorUserId}"
+     )`)
+     res.status(200).send("tarefa adicionada com sucesso")
 
    } catch (error) {
      res.status(400).send(error.message)
